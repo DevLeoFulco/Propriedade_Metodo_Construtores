@@ -22,5 +22,11 @@ namespace Propriedades__Métodos_e_Construtores.Model
         public bool RemoverAlunos(Pessoa aluno){
             return Alunos.Remove(aluno);
         }
+
+        public void ListarAlunos(){
+            foreach(Pessoa aluno in Alunos){
+                Console.WriteLine(aluno.NomeCompleto);
+            }
+        }
     }
 }
