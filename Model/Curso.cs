@@ -13,5 +13,11 @@ namespace Propriedades__Métodos_e_Construtores.Model
         public void AdicionarAluno(Pessoa aluno){
             Alunos.Add(aluno);
         }
+
+        public int ObterQuantidadeDeAlunosMatriculados(){
+            int quantidade = Alunos.Count;
+            return quantidade;
+
+        }
     }
 }
