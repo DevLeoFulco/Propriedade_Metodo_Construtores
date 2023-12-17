@@ -17,7 +17,10 @@ namespace Propriedades__Métodos_e_Construtores.Model
         public int ObterQuantidadeDeAlunosMatriculados(){
             int quantidade = Alunos.Count;
             return quantidade;
+        }
 
+        public bool RemoverAlunos(Pessoa aluno){
+            return Alunos.Remove(aluno);
         }
     }
 }
