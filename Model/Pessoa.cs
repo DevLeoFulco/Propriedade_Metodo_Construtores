@@ -7,6 +7,17 @@ namespace Propriedades__Métodos_e_Construtores.Model
 {
     public class Pessoa
     {
+
+        public Pessoa(){
+
+        }
+
+        public Pessoa (string Nome, string Sobrenome){
+            this.Nome = Nome;
+            this.Sobrenome = Sobrenome;
+        }
+
+
         private string nomeFormat;
         private int idadeFormat;
         public string Nome { 

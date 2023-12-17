@@ -1,9 +1,20 @@
 ﻿using Propriedades__Métodos_e_Construtores.Model;
 
-Pessoa p1 = new Pessoa();
+Pessoa p1 = new Pessoa(Nome:"Leandresson",Sobrenome:"Fulco");
 
-p1.Nome="Leandresson";
-p1.Sobrenome = "Fulco";
-p1.Idade = 38;
 
-p1.Apresentar();
+Pessoa p2 = new Pessoa(Nome:"Cleiton",Sobrenome:"Moreira");
+
+
+Curso logicaEalgoritmo = new Curso();
+
+logicaEalgoritmo.Nome = "Logica e Algoritmo em C";
+logicaEalgoritmo.Alunos = new List<Pessoa>();
+
+
+Console.WriteLine($"Alunos do curso de: {logicaEalgoritmo.Nome}");
+logicaEalgoritmo.AdicionarAluno(p2);
+logicaEalgoritmo.AdicionarAluno(p1);
+
+
+logicaEalgoritmo.ListarAlunos();
